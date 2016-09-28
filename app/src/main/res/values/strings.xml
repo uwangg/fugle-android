@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ToonDere</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="facebook_app_id">1783256118555186</string>
+
+    <!-- 서버 주소 -->
+    <string name="server_url">http://192.168.0.80:8000/</string>
+
+    <!-- 회원가입 -->
+    <string name="actionbar_name">회원가입</string>
+    <string name="hint_name">이름</string>
+    <string name="hint_email">이메일</string>
+    <string name="hint_message">상태 메세지</string>
+    <string name="hint_password">비밀번호</string>
+
+    <string name="btn_sign_up">회원가입</string>
+
+    <string name="err_msg_name">이름을 입력해주세요</string>
+    <string name="err_msg_email">올바른 이메일형식이 아닙니다</string>
+    <string name="err_msg_password">패스워드를 입력해주세요</string>
+    <!-- 회원가입 -->
+
+    <!-- 툴바 내용 목록 -->
+    <string name="toolbar_rating">별점을 입력해주세요</string>
+    <string name="toolbar_recommend">추천 목록</string>
+
+    <!-- 메인 툴바 -->
+    <string name="search_hint">작품명 or 작가명을 입력해주세요.</string>
+    <string name="action_logout">로그아웃</string>
+    <string name="action_suggestion">건의사항</string>
+
+</resources>

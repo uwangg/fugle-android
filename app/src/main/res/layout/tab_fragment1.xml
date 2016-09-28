@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tab1_first_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    >
+                    <ImageView
+                        android:id="@+id/home_prof_img"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/header_cover_image"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/profile_circular_border_imageview"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/egg_profile"
+                        />
+                    <TextView
+                        android:id="@+id/tab1_like_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/background"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="OOO님 평가가 아직 없으시네요. 별점을 입력해주세요."
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/textview_border"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tab1_like_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="나중에하기"/>
+
+                    <TextView
+                        android:id="@+id/tab1_like_btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="평가하기"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/more_today_webtoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="5dp"
+            android:text="오늘의 인기웹툰 더보기 >"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/today_webtoon_first_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="많은 분이 보고싶어하신 웹툰들이예요!"
+                    android:textSize="17dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/today_webtoon_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/today_webtoon_prediction_title"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="3dp"
+                        android:text="예상 별점 "
+                        android:layout_above="@+id/today_webtoon_title"
+                        android:layout_alignLeft="@+id/today_webtoon_title"
+                        android:background="#9FFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/today_webtoon_prediction"
+                        android:paddingRight="5dp"
+                        android:paddingTop="3dp"
+                        android:layout_above="@+id/today_webtoon_title"
+                        android:layout_toRightOf="@+id/today_webtoon_prediction_title"
+                        android:text="0.0"
+                        android:background="#9FFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:id="@+id/today_webtoon_title"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:layout_alignBottom="@+id/today_webtoon_img"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="25sp"
+                        android:background="#9FFF"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/today_webtoon_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag"
+                    android:padding="16dp"
+                    android:text="오리, 개구리님 외 친구 7명이 봤어요"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/textview_border"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/webtoon_like_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/button_transparent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/webtoon_like_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/main_heart_empty"/>
+
+                        <TextView
+                            android:id="@+id/webtoon_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="보고싶어요"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/webtoon_rating_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/button_transparent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/webtoon_rating_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/main_star_empty"/>
+
+                        <TextView
+                            android:id="@+id/webtoon_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="평가하기"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/webtoon_comment_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/button_transparent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/webtoon_comment_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/main_reply_empty"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="코멘트"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/more_today_cartoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="5dp"
+            android:text="오늘의 인기만화 더보기 >"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/today_cartoon_first_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="많은 분이 보고싶어하신 만화책들이예요!"
+                    android:textSize="17dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/today_cartoon_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/today_cartoon_prediction_title"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="3dp"
+                        android:text="예상 별점 "
+                        android:layout_above="@+id/today_cartoon_title"
+                        android:layout_alignLeft="@+id/today_cartoon_title"
+                        android:background="#9FFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/today_cartoon_prediction"
+                        android:paddingRight="5dp"
+                        android:paddingTop="3dp"
+                        android:layout_above="@+id/today_cartoon_title"
+                        android:layout_toRightOf="@+id/today_cartoon_prediction_title"
+                        android:text="0.0"
+                        android:background="#9FFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:id="@+id/today_cartoon_title"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        android:layout_alignBottom="@+id/today_cartoon_img"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="25sp"
+                        android:background="#9FFF"/>
+
+                </RelativeLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/today_cartoon_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tag"
+                    android:padding="16dp"
+                    android:text="오리, 개구리님 외 친구 7명이 봤어요"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/textview_border"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/cartoon_like_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/button_transparent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/cartoon_like_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/main_heart_empty"/>
+
+                        <TextView
+                            android:id="@+id/cartoon_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="보고싶어요"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cartoon_rating_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/button_transparent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/cartoon_rating_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/main_star_empty"/>
+
+                        <TextView
+                            android:id="@+id/cartoon_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="평가하기"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cartoon_comment_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/button_transparent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/cartoon_comment_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/main_reply_empty"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="center"
+                            android:text="코멘트"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

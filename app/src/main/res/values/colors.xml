@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <!-- fugle 전용색 -->
+    <color name="mainColor">#61CAFC</color>
+    <color name="subColor1">#22487a</color>
+    <color name="whiteColor">#ffffff</color>
+    <!-- fugle 전용색 -->
+
+    <!-- 투명색 -->
+    <color name="transparentMainColor">#0061CAFC</color>
+    
+</resources>
